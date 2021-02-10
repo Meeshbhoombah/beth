@@ -11,8 +11,10 @@
     "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
+    "@web3-react/core": "^6.1.1",
     "babel-polyfill": "^6.26.0",
     "cors": "^2.8.5",
+    "ethers": "^5.0.30",
     "express": "^4.17.1",
     "ipfs-mini": "^1.1.5",
     "react": "^16.5.2",
