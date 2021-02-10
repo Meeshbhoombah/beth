@@ -21,7 +21,7 @@ function getLibrary() {
 function App() {
     return (
         // @web3-react/core requires passing chosen convience library
-        <Provider>
+        <Provider store={store}>
             <Web3ReactProvider getLibrary={getLibrary}>
                 <Switch>
                     <Route path="/">
