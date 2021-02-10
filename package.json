@@ -7,7 +7,7 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "client": "webpack-dev-server --display-error-details --mode development --devtool inline-source-map --hot --config webpack.dev.js",
-    "server": "nodemon src/chorable",
+    "server": "nodemon chorable",
     "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {

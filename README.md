@@ -1,4 +1,4 @@
-# rein-boilerplate
+# Chorable
 A baseline boilerplate for generating an decentralized application with React,
 Express, IPFS, and Node.
 
