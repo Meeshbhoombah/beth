@@ -1,9 +1,5 @@
 # Chorable
-A baseline boilerplate for generating an decentralized application with React,
-Express, IPFS, and Node.
-
-The app's frontend is built into a single file, served by the backend Smart
-contracts can be deployed via Truffle.
+DAOS for the governance and completion of tasks.
 
 ## Table of Contents
 - [Getting Started](#getting-started) - ([Windows](#windows)/[Mac OS](#mac-os))
