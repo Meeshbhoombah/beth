@@ -11,17 +11,15 @@ import Init from './Init';
 import Dashboard from './Dashboard';
 
 
-// @web3-react/core requires passing chosen convience
 function getLibrary() {
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    console.log(provider);
-    return provider;
+    return new ethers.providers.Web3Provider(window.ethereum);
 };
 
 
 function App() {
     return (
-        <Web3ReactProvider getLibrary = {getLibrary()}>
+        // @web3-react/core requires passing chosen convience library
+        <Web3ReactProvider getLibrary={getLibrary}>
             <Switch>
                 <Route path="/">
                     <Init />

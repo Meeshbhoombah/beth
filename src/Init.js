@@ -5,10 +5,10 @@ import { useWeb3React } from '@web3-react/core';
 
 
 function Init() {
-    const context = useWeb3React();
+    const connector = useWeb3React();
 
     return (
-        <h1>Testing</h1>
+        <h1>Undefined</h1>
     )
 }
 
