@@ -15,9 +15,12 @@ function getEthers() {
 
 
 function App() {
+    const injectedMetamask = window.ethereum;
+
     useEffect(() => {
-        console.log(getEthers());
-    }, []);
+    // TODO check if Metamask is injected
+    // if it is, set on state, otherwise continue
+    }, [injectedMetamask]);
 
     return (
         <Switch>
