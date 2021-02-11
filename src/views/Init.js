@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 
-import { useWeb3React } from '@web3-react/core';
-
-
 function Counter() {
   // State: a counter value
   const [counter, setCounter] = useState(0)
@@ -23,12 +20,6 @@ function Counter() {
 
 
 function Init() {
-    const { chainId } = useWeb3React();
-
-    useEffect(() => {
-        console.log(chainId);
-    });
-
     return (
         <Counter />
     )

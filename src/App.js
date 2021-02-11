@@ -3,32 +3,28 @@ import { hot } from 'react-hot-loader/root';
 import { Switch, Route } from 'react-router-dom';
 
 
-// import { ethers } from 'ethers';
-import { Web3ReactProvider } from '@web3-react/core';
-import { Web3Provider } from '@ethersproject/providers';
+import { ethers } from 'ethers';
 
 
 import Init from './views/Init';
 
 
 function getEthers() {
-    return new Web3Provider(window.ethereum);
+    return new ethers.providers.Web3Provider(window.ethereum);
 };
 
 
 function App() {
     useEffect(() => {
         console.log(getEthers());
-    })
+    }, []);
 
     return (
-        <Web3ReactProvider getLibrary={getEthers}>
-            <Switch>
-                <Route path="/">
-                    <Init />
-                </Route>
-            </Switch>
-        </Web3ReactProvider>
+        <Switch>
+            <Route path="/">
+                <Init />
+            </Route>
+        </Switch>
     );
 };
 
