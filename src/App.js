@@ -1,26 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { hot } from 'react-hot-loader/root';
 import { Switch, Route } from 'react-router-dom';
 
 
-import { ethers } from 'ethers';
+// import { ethers } from 'ethers';
+import { Web3ReactProvider } from '@web3-react/core';
+import { Web3Provider } from '@ethersproject/providers';
 
 
-import Init from './Init';
+import Init from './views/Init';
 
 
-function getWeb3Provider() {
-    return new ethers.providers.Web3Provider(window.ethereum);
+function getEthers() {
+    return new Web3Provider(window.ethereum);
 };
 
 
 function App() {
+    useEffect(() => {
+        console.log(getEthers());
+    })
+
     return (
-        <Switch>
-            <Route path="/">
-                <Init />
-            </Route>
-        </Switch>
+        <Web3ReactProvider getLibrary={getEthers}>
+            <Switch>
+                <Route path="/">
+                    <Init />
+                </Route>
+            </Switch>
+        </Web3ReactProvider>
     );
 };
 
