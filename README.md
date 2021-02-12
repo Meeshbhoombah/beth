@@ -2,6 +2,16 @@ Add friends, bet ETH, get tasks done. Introducing:
 
 ![(Worldmark)](/docs/1.png)
 
+## Rules
+1. Use [**b**(**e****t**]h) to create a house and invite your friends.
+2. Create daily, weekly, or monthly tasks by voting in ideas and 
+   collaboratively editing them to suit your home.
+3. Pool funds for each set of tasks with ETH, get assigned tasks 
+   inversely proportional to the total ETH your put in.
+4. For each time period, do your assigned tasks and earn ETH for completion.
+5. When you complete your tasks, you are then given access to take ETH 
+   from roommates by completing their tasks.
+
 ## Table of Contents
 - [Getting Started](#getting-started) - ([Windows](#windows)/[Mac OS](#mac-os))
 - [Installing](#installing)
