@@ -1,6 +1,8 @@
 # Chorable
 DAOS for the governance and completion of tasks.
 
+![(Worldmark)](/docs/1.png)
+
 ## Table of Contents
 - [Getting Started](#getting-started) - ([Windows](#windows)/[Mac OS](#mac-os))
 - [Installing](#installing)
@@ -109,4 +111,6 @@ npm install
 ## Authors
 ## License
 ## Acknowledgements
+
+![(Worldmark)](/docs/2.png)
 
