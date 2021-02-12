@@ -8,13 +8,13 @@ Add friends. Create tasks. Bet Eth. Get tasks done. Introducing:
 
 ## Getting Started
 ### Prerequisites
-- [Homebrew](https://brew.sh/) (Mac OS) or [Chocolatey](https://docs.chocolatey.org/en-us/) (Windows)
+- [Chocolatey](https://docs.chocolatey.org/en-us/) (Windows) or [Homebrew](https://brew.sh/) (Mac OS)
 - [Node.js](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/)
 - [IPFS](https://docs.ipfs.io/concepts/)
 
 Clone this repository and navigate to its root, then do the following (based on
-your operating systeem):
+your operating system):
 
 ### Windows
 #### Chocolatey
