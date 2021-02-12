@@ -1,4 +1,4 @@
-Add friends. Create tasks. Bet Eth. Get tasks done. Introducing:
+Add friends, bet ETH, get tasks done. Introducing:
 
 ![(Worldmark)](/docs/1.png)
 
