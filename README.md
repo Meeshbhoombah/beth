@@ -1,5 +1,4 @@
-# Chorable
-DAOS for the governance and completion of tasks.
+Add friends. Create tasks. Bet Eth. Get tasks done. Introducing:
 
 ![(Worldmark)](/docs/1.png)
 
