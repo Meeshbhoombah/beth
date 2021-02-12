@@ -5,8 +5,13 @@ const INITAL_STATE = {
     metamask: false,
 };
 
-const ACTIONS = {
+
+export const ACTIONS = {
     METAMASK: 'metamask',
+}
+
+export const METAMASK = {
+    AVAILABLE: 'available',
 }
 
 
@@ -16,14 +21,11 @@ function log(str) {
 
 
 function reducer(state = INITAL_STATE, action) {
-    console.log(action.type);
-    console.log(ACTIONS.METAMASK);
-
     switch(action.type) {
         case ACTIONS.METAMASK:
-            const e = action.subtype;
-            switch (e) {
-                case 'available':
+            const metamask = action.subtype;
+            switch (metamask) {
+                case METAMASK.AVAILABLE:
                     log('metamask/available');
                     return {
                         ...state,
@@ -33,8 +35,8 @@ function reducer(state = INITAL_STATE, action) {
                     return
             }
         default:
-            console.log('test');
             return
+
     }
 }
 

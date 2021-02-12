@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 
 
 import { ethers } from 'ethers';
+import { ACTIONS, METAMASK } from '../state'
 
 
 function getEthers() {
@@ -22,8 +23,7 @@ function Init() {
         )
     } else {
         dispatch({
-            type: 'metamask',
-            subtype: 'available'
+            type: ACTIONS.METAMASK,
         });
 
         useEffect(() => {
