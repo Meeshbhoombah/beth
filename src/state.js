@@ -5,19 +5,26 @@ const INITAL_STATE = {
     metamask: false,
 };
 
+const ACTIONS = {
+    METAMASK: 'metamask',
+}
+
 
 function log(str) {
-    console.log('EVENT:' + str)
+    console.log('Chorable - EVENT: ' + str)
 }
 
 
 function reducer(state = INITAL_STATE, action) {
-    log(action.type)
+    console.log(action.type);
+    console.log(ACTIONS.METAMASK);
+
     switch(action.type) {
-        case 'metamask':
-            const e = action.payload.e;
+        case ACTIONS.METAMASK:
+            const e = action.subtype;
             switch (e) {
                 case 'available':
+                    log('metamask/available');
                     return {
                         ...state,
                         metamask: true
@@ -26,6 +33,7 @@ function reducer(state = INITAL_STATE, action) {
                     return
             }
         default:
+            console.log('test');
             return
     }
 }

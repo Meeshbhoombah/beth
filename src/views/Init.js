@@ -22,11 +22,19 @@ function Init() {
         )
     } else {
         dispatch({
-            action: 'metamask',
-            payload: {
-                e: 'available'
-            },
+            type: 'metamask',
+            subtype: 'available'
         });
+
+        useEffect(() => {
+            (async () => {
+                try {
+                    let m = await metamask.enable();
+                } catch (e) {
+                    console.error(e);
+                }
+            })();
+        }, [metamask]);
 
         return (
             <h1>Metamask Installed</h1>
