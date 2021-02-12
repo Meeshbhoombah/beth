@@ -21,6 +21,8 @@ function log(str) {
 
 
 function reducer(state = INITAL_STATE, action) {
+    log(action.type);
+    log(ACTIONS.METAMASK);
     switch(action.type) {
         case ACTIONS.METAMASK:
             const metamask = action.subtype;
