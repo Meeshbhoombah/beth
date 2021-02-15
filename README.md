@@ -3,7 +3,7 @@ Add friends, bet ETH, get tasks done. Introducing:
 ![(Worldmark)](/docs/1.png)
 
 ## Rules
-1. Use [**b**(**e****t**]h) to create a house and invite your friends.
+1. Use [ **B** ( **E** **T** ] H) to create a house and invite your friends.
 2. Create daily, weekly, or monthly tasks by voting in ideas and 
    collaboratively editing them to suit your home.
 3. Pool funds for each set of tasks with ETH, get assigned tasks 
